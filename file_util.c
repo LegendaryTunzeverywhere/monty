@@ -135,7 +135,7 @@ void find_funcs(char *opcode, char *no, int ln, int fmt)
  * Description: function that calls the required function.
  * Return: Nothing (void)
  */
-void call_func(op_func func, char *op, char *no, int ln, int fmt)
+void call_func(opfunc func, char *op, char *no, int ln, int fmt)
 {
 	stack_t *node;
 	int log;

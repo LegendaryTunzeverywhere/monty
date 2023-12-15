@@ -48,7 +48,7 @@ void open_file(char *filename);
 void read_file(FILE *);
 int parse_line(char *buff, int line_num, int fmt);
 void find_funcs(char *, char *, int, int);
-void call_func(op_func, char *, char *, int, int);
+void call_func(opfunc, char *, char *, int, int);
 int len_chars(FILE *);
 
 /*stack utility*/
