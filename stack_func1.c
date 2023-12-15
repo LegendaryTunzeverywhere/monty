@@ -96,9 +96,7 @@ void sub_nodes(stack_t **stack, unsigned int line_number)
 	int plus;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-
 		_err(8, line_number, "sub");
-
 
 	(*stack) = (*stack)->next;
 	plus = (*stack)->n - (*stack)->prev->n;
