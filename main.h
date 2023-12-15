@@ -43,13 +43,39 @@ typedef struct instruction_s
 extern stack_t *head;
 typedef void (*opfunc)(stack_t **, unsigned int);
 
-stack_t *create_node(int n);
-void free_nodes(void);
-void add_to_queue(stack_t **, unsigned int);
+/*file uitility*/
 void open_file(char *filename);
-int parse_line(char *buff, int line_num, int fmt);
 void read_file(FILE *);
-void open_file(char *filename);
+int parse_line(char *buff, int line_num, int fmt);
+void find_funcs(char *, char *, int, int);
+void call_func(op_func, char *, char *, int, int);
+int len_chars(FILE *);
+
+/*stack utility*/
+void free_nodes(void);
+stack_t *create_node(int n);
+void add_to_queue(stack_t **, unsigned int);
+void print_stack(stack_t **, unsigned int);
+void add_to_stack(stack_t **, unsigned int);
+void print_top(stack_t **, unsigned int);
+void pop_top(stack_t **, unsigned int);
+void nop(stack_t **, unsigned int);
+void swap_nodes(stack_t **, unsigned int);
+
+void add_nodes(stack_t **, unsigned int);
+void div_nodes(stack_t **, unsigned int);
+void mul_nodes(stack_t **, unsigned int);
+void mod_nodes(stack_t **, unsigned int);
+void sub_nodes(stack_t **, unsigned int);
+
+void print_char(stack_t **, unsigned int);
+void rotl(stack_t **, unsigned int);
+void print_str(stack_t **, unsigned int);
+
+void err(int error_code, ...);
+void string_err(int error_code, ...);
+void rotr(stack_t **, unsigned int);
+void more_err(int error_code, ...);
 
 
 #endif

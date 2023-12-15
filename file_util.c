@@ -25,7 +25,6 @@ void open_file(char *filename)
  * Description: function that reads a file.
  * Return: Nothing (void)
  */
-
 void read_file(FILE *fd)
 {
 	int fmt = 0, line_num;
@@ -51,9 +50,7 @@ void read_file(FILE *fd)
  *
  * Return: Returns 0 if the opcode is stack. 1 if queue.
  */
-
 int parse_line(char *buff, int line_num, int fmt)
-
 {
 	char *opcode, *no;
 	const char *delim = "\n ";
