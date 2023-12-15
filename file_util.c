@@ -79,7 +79,7 @@ int parse_line(char *buff, int line_num, int fmt)
  * @ln: line number
  * @fmt:  storage format. If 0, Nodes will be entered as a stack,
  * if 1, nodes will be entered as a queue.
- * 
+ *
  * Description: function that find the appropriate function for the opcode
  *
  * Return: Nothing (void)
@@ -147,7 +147,7 @@ void call_func(opfunc func, char *op, char *no, int ln, int fmt)
 		if (no != NULL && no[0] == '-')
 		{
 			no = no + 1;
-			no = -1;
+			log = -1;
 		}
 		if (no == NULL)
 			err(5, ln);

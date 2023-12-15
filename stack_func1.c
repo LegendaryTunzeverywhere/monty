@@ -91,12 +91,12 @@ void div_nodes(stack_t **stack, unsigned int line_num)
  * Description: function that sub the top two elements of the stack.
  * Return: Nothing (void)
  */
-void sub_nodes(stack_t **stack, unsigned int line_number)
+void sub_nodes(stack_t **stack, unsigned int line_num)
 {
 	int plus;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-		_err(8, line_number, "sub");
+		_err(8, line_num, "sub");
 
 	(*stack) = (*stack)->next;
 	plus = (*stack)->n - (*stack)->prev->n;
