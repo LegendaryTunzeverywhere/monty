@@ -10,7 +10,7 @@
  *
  * Return: Nothing (void)
  */
-void mod_nodes(stack_t **stack, unsigned int line_number)
+void mod_nodes(stack_t **stack, unsigned int line_num)
 {
 	int plus;
 
@@ -32,7 +32,7 @@ void mod_nodes(stack_t **stack, unsigned int line_number)
  * @stack: ptr to a ptr that points to top node of the stack.
  * @line_num: integer that represents the line number of of the opcode.
  *
- * Description: function that multiplies the top two 
+ * Description: function that multiplies the top two
  * element nodes of the stack
  *
  * Return: Nothing (void)
